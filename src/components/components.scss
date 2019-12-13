@@ -1,0 +1,25 @@
+// Component styles
+
+.headroom-wrapper {
+    height: auto;
+    .headroom {
+        display: flex;
+        background-color: cornflowerblue;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.aboutWrapper {
+    background-color: cornflowerblue;
+    height: 100vh;
+
+    .content {
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 960px;
+    }
+}

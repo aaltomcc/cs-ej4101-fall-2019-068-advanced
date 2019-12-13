@@ -8,9 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import NavBar from './NavBar'
+import About from './About'
+import "./layout.scss"
+import './components.scss'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <NavBar siteTitle={data.site.siteMetadata.title} />
+      <About />
       <div
         style={{
           margin: `0 auto`,
