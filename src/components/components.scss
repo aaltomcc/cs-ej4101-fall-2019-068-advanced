@@ -1,15 +1,73 @@
 // Headroom
 .headroom-wrapper {
-    height: auto;
-    .headroom {
-        display: flex;
-        background: gray;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+  a {
+      color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 1.1rem;
+    align-items: center;
+    a {
+      color: white;
+      margin-left: 2rem;
+      &:hover {
+        color:gray;
+      }
     }
-
+  }
+  .headroom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+    transition: 'all 0.25s ease-in-out';
+  }
+  .headroom--scrolled {
+    transition: 'all 0.25s ease-in-out';
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: 'all 0.25s ease-in-out';
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0);
+    transition: 'all 0.25s ease-in-out';
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    a {
+        color: black;
+    }
     nav {
-        display: flex;
-        justify-content: flex-end;
+      a {
+        color: black;
+        &:hover {
+          border-color: black;
+          color: black;
+        }
+        &:focus {
+          color: black;
+        }
+      }
     }
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    span {
+      color: black;
+    }
+  }
 }
 
 // About
@@ -23,13 +81,32 @@
         background: rgba(0, 0, 0, 0.6);
         height: 100%;
         width: 100%;
+
+        #copyright {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: greenyellow;
+        }
     }
 
     .content {
         position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
         color: white;
-        margin: 2rem;
         max-width: 960px;
+
+        @media (max-width: 992px) {
+            max-width: 600px;
+        }
+
+        @media (max-width: 600px) {
+            max-width: 420px;
+        }
     }
 }
 

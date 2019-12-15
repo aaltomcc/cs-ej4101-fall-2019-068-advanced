@@ -6,10 +6,8 @@ import Headroom from "react-headroom"
 export const NavBar = ({ siteTitle }) => {
   return (
     <Headroom>
-      <div>
-        <h1>
-          <Link to="/">{siteTitle}</Link>
-        </h1>
+      <div id="title">
+        <Link to="/">{siteTitle}</Link>
       </div>
       <nav>
         <Link to="#">About</Link>
