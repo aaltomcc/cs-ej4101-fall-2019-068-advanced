@@ -53,7 +53,8 @@
     margin: 0 auto;
     max-width: 960px;
     div {
-        display: flex;
-        justify-content: center;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
     }
 }
