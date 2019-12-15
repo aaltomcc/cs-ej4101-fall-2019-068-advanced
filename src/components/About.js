@@ -1,9 +1,30 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+
+import BackgroundImage from 'gatsby-background-image'
 
 export const About = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    desktop: file(relativePath: { eq: "About.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+  `)
+  const imageData = data.desktop.childImageSharp.fluid
   return (
-    <div className="aboutWrapper">
-      <div className="content">
+    <BackgroundImage
+          Tag="section"
+          className='index-page-jumbotron'
+          fluid={imageData}
+          backgroundColor='transparent'
+        >
+        <div className='overlay'>
+            <div className='content'>
         <h1>About</h1>
         <p>
           A heading starting with the "About" string (the actual case does not
@@ -21,8 +42,9 @@ export const About = () => {
           In any case, do should not write any private information such as your
           student number, your date of birth, your address, and so on.
         </p>
-      </div>
-    </div>
+        </div>
+        </div>
+      </BackgroundImage>
   )
 }
 

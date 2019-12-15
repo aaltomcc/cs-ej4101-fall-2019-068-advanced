@@ -3,7 +3,7 @@
     height: auto;
     .headroom {
         display: flex;
-        background-color: cornflowerblue;
+        background: gray;
     }
 
     nav {
@@ -13,13 +13,23 @@
 }
 
 // About
-.aboutWrapper {
-    background-color: cornflowerblue;
+.index-page-jumbotron {
+    position: relative;
+    background-size: cover;
     height: 100vh;
+    width: 100vw;
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+    }
 
     .content {
-        margin: 0 auto;
-        padding: 1rem;
+        position: absolute;
+        color: white;
+        top: 2rem;
+        left: 2rem;
         max-width: 960px;
     }
 }
