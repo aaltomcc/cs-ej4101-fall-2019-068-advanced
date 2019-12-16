@@ -112,25 +112,49 @@
 
 // Projects
 .projectsWrapper {
+    margin: 2rem 1rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 4rem 4rem 1rem 4rem;
-    @media (max-width: 1000px) {
-      margin: 4rem 2rem 1rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        text-align: center;
     }
-    @media (max-width: 700px) {
-      margin: 4rem 1rem 1rem 1rem;
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-gap: 2.5rem;
+
+        @media (max-width: 992px) {
+            grid-template-columns: 90vw;
+        }
     }
 
     article {
-        margin-bottom: 2rem;
         position: relative;
-        height: 17rem;
-        flex-basis: calc(99.9% * 1 / 3 - 2.5rem);
-        max-width: calc(99.9% * 1 / 3 - 2.5rem);
-        width: calc(99.9% * 1 / 3 - 2.5rem);
+        .gatsby-image-wrapper {
+            position: static !important;
+        }
+        a {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .info {
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+        }
     }
 }
 

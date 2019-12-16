@@ -30,21 +30,24 @@ export const Projects = () => {
     }
   `)
   return (
-    <div className="projectsWrapper">
-      {console.log(data)}
+    <section className="projectsWrapper">
+        <h1>Projects</h1>
+        <div className='projectsGrid'>
       {data.allMarkdownRemark.edges.map(e => {
         const { cover, date, title, path } = e.node.frontmatter
         return (
           <article>
-            <Img fluid={cover.childImageSharp.fluid} />
-            <Link to={path}>
-              <span>{date}</span>
-              <span>{title}</span>
-            </Link>
+                <Img fluid={cover.childImageSharp.fluid} />
+                <Link to={path}></Link>
+                <div className='info'>
+                    <span>{date}</span>
+                    <h1>{title}</h1>
+                </div>
           </article>
         )
       })}
-    </div>
+      </div>
+    </section>
   )
 }
 
