@@ -1,6 +1,7 @@
 language: node_js
 before_script:
   - npm install -g gatsby-cli
+  - npm install gh-pages
 node_js:
   - "10"
 deploy:
