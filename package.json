@@ -39,7 +39,7 @@
     "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/aaltomcc/cs-ej4101-fall-2019-068-advanced",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
