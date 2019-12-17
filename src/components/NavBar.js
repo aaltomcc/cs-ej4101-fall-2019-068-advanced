@@ -7,11 +7,11 @@ export const NavBar = ({ siteTitle }) => {
   return (
     <Headroom>
       <div id="title">
-        <Link to="/">{siteTitle}</Link>
+        Tarmo Terimaa
       </div>
       <nav>
         <Link to="#">About</Link>
-        <Link to="#">Projects</Link>
+        <Link to="/#projects">Projects</Link>
       </nav>
     </Headroom>
   )

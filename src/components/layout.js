@@ -23,12 +23,14 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  console.log(children)
   return (
     <>
+    <div className='site'>
       <NavBar siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <main className='site-content'>{children}</main>
       <Footer />
+    </div>
     </>
   )
 }

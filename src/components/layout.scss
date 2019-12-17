@@ -1,5 +1,15 @@
 // Global styles
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

@@ -30,7 +30,7 @@ export const Projects = () => {
     }
   `)
   return (
-    <section className="projectsWrapper">
+    <section className="projectsWrapper" id='projects'>
         <h1>Projects</h1>
         <div className='projectsGrid'>
       {data.allMarkdownRemark.edges.map(e => {
