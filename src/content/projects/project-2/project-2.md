@@ -1,8 +1,8 @@
 ---
 path: "/projects/project-2"
 cover: "./blocks.jpg"
-date: "2019-02-01"
-title: "My Second Project"
+date: "2019-12-16"
+title: "Learned 068"
 ---
 
 Project 2 text asffsad

@@ -1,8 +1,8 @@
 ---
 path: "/projects/project-1"
 cover: "./speed.jpg"
-date: "2019-01-01"
-title: "My First Project"
+date: "2019-12-17"
+title: "This course 068"
 ---
 
-Project 1 text asffsad
+Blog post about this course

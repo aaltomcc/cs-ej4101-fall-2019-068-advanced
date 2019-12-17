@@ -31,7 +31,7 @@ export const Projects = () => {
   `)
   return (
     <section className="projectsWrapper" id='projects'>
-        <h1>Projects</h1>
+        <h1>Blog posts</h1>
         <div className='projectsGrid'>
       {data.allMarkdownRemark.edges.map(e => {
         const { cover, date, title, path } = e.node.frontmatter
