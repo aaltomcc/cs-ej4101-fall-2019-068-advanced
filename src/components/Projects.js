@@ -36,7 +36,7 @@ export const Projects = () => {
       {data.allMarkdownRemark.edges.map(e => {
         const { cover, date, title, path } = e.node.frontmatter
         return (
-          <article>
+          <article key={e.node.id}>
                 <Img fluid={cover.childImageSharp.fluid} />
                 <Link to={path}></Link>
                 <div className='info'>

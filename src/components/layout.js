@@ -23,7 +23,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  console.log(children)
   return (
     <>
     <div className='site'>
