@@ -2,7 +2,8 @@
 path: "/projects/project-2"
 cover: "./finance.jpg"
 date: "2019-02-01"
-title: "My Third Project"
+title: "Random post"
 ---
 
-Project 2 text asffsad
+## Just something random
+This is just a random post that doesn't include anything related to the course. The grid on the first page just looks nicer with at least three items.
