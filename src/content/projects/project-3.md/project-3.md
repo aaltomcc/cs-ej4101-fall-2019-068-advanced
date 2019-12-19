@@ -1,5 +1,5 @@
 ---
-path: "/projects/project-2"
+path: "/projects/project-3"
 cover: "./finance.jpg"
 date: "2019-02-01"
 title: "Random post"

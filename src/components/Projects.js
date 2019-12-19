@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export const Projects = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             frontmatter {
